@@ -32,6 +32,7 @@ function install_spigot_1_8_9() {
     installJava
     wget "https://cdn.getbukkit.org/spigot/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar"
     mv spigot-1.8.8-R0.1-SNAPSHOT-latest.jar spigot.jar
+    # Add start.sh
 }
 
 function install_spigot_1_9_2() {
@@ -42,6 +43,7 @@ function install_spigot_1_9_2() {
     installJava
     wget "https://cdn.getbukkit.org/spigot/spigot-1.9.2-R0.1-SNAPSHOT-latest.jar"
     mv spigot-1.9.2-R0.1-SNAPSHOT-latest.jar spigot.jar
+    # Add start.sh
 }
 
 function install_spigot_1_10_2() {
@@ -52,6 +54,7 @@ function install_spigot_1_10_2() {
     installJava
     wget "https://cdn.getbukkit.org/spigot/spigot-1.10.2-R0.1-SNAPSHOT-latest.jar"
     mv spigot-1.10.2-R0.1-SNAPSHOT-latest.jar spigot.jar
+    # Add start.sh
 }
 
 #function install_bungee() {
