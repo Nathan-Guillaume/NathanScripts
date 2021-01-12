@@ -90,6 +90,8 @@ function menuJAR() {
   clear
   echo "Choix de la version de Minecraft"
   echo ""
+  echo "/!\ Avant l'installation, vérifier quand dans le dossier home, il n'y ai pas de fichier nommé minecraft ! /!\ "
+  echo ""
   echo "   1) Spigot"
   echo "   2) BungeeCord"
   echo "   3) Sponge"
@@ -120,6 +122,8 @@ function menuJAR() {
 function menuSpigotVersion() {
   clear
   echo "Choix de la version de Spigot"
+  echo ""
+  echo "/!\ Avant l'installation, vérifier quand dans le dossier home, il n'y ai pas de fichier nommé minecraft ! /!\ "
   echo ""
   echo "   1) 1.8.9"
   echo "   2) 1.9.2"
