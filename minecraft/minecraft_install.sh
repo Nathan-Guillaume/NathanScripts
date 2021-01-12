@@ -99,10 +99,14 @@ function menuJAR() {
     menuSpigotVersion
     ;;
   2)
-    install_bungee
+    #install_bungee
+    echo "Pas encore disponible"
+    read -n1 -r -p "Appuyez sur n'importe quelle touche pour continuer..."
     ;;
   3)
-    menuSpongeVersion
+    #menuSpongeVersion
+    echo "Pas encore disponible"
+    read -n1 -r -p "Appuyez sur n'importe quelle touche pour continuer..."
     ;;
   4)
     exit 0
