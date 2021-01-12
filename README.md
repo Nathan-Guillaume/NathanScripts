@@ -21,5 +21,9 @@ CentOS            |   ✔
 
 - Minecraft Server Installation
 
+## Todo
+- discord_bot_install.sh
+- nginx_install.sh
+
 ## Developer
 - [Nathan Guillaume](https://github.com/Nathan-Guillaume)
