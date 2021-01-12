@@ -62,7 +62,6 @@ function menu() {
   clear
   echo "Installation d'un serveur minecraft"
   echo ""
-  echo "Qu'est-ce que tu veux faire ?"
   echo "   1) Installer un serveur minecraft"
   echo "   2) Mettre à jour"
   echo "   3) Quitter"
@@ -86,7 +85,6 @@ function menuJAR() {
   clear
   echo "Choix de la version de Minecraft"
   echo ""
-  echo "Qu'est-ce que tu veux faire ?"
   echo "   1) Spigot"
   echo "   2) BungeeCord"
   echo "   3) Sponge"
@@ -118,7 +116,6 @@ function menuSpigotVersion() {
   clear
   echo "Choix de la version de Spigot"
   echo ""
-  echo "Qu'est-ce que tu veux faire ?"
   echo "   1) 1.8.9"
   echo "   2) 1.9.2"
   echo "   3) 1.10.2"
@@ -146,7 +143,6 @@ function menuSpongeVersion() {
   clear
   echo "Choix de la version de Sponge"
   echo ""
-  echo "Qu'est-ce que tu veux faire ?"
   echo "   1) 1.8.9"
   echo "   2) 1.9.2"
   echo "   3) 1.10.2"
