@@ -13,15 +13,13 @@ OS | Support
 ---------------|--------
 Debian            |   ✔
 Ubuntu            |   ✔
+CentOS            |   ✔
 
 ---
 
 **Contains**
 
-- Connections
-- Configurations
-- Interfaces
-- And more ...
+- Minecraft Server Installation
 
 ## Developer
 - [Nathan Guillaume](https://github.com/Nathan-Guillaume)
