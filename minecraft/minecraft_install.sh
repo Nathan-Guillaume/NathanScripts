@@ -13,6 +13,8 @@
 #    This script is under development, it means that the script is not
 #               yet functional or contains bugs
 #
+#                         Language : French
+#                      Author : Nathan Guillame
 
 function update() {
   apt-get update
