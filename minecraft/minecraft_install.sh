@@ -18,12 +18,16 @@ function update() {
   apt-get update
 }
 
+function installJava() {
+  apt-get -y install oracle-java8-installer
+}
+
 function install_spigot_1_8_9() {
     cd /home/
     mkdir "minecraft"
     cd minecraft/
     update
-    installDepend
+    installJava
     wget "https://cdn.getbukkit.org/spigot/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar"
     mv spigot-1.8.8-R0.1-SNAPSHOT-latest.jar spigot.jar
 }
@@ -33,7 +37,7 @@ function install_spigot_1_9_2() {
     mkdir "minecraft"
     cd minecraft/
     update
-    installDepend
+    installJava
     wget "https://cdn.getbukkit.org/spigot/spigot-1.9.2-R0.1-SNAPSHOT-latest.jar"
     mv spigot-1.9.2-R0.1-SNAPSHOT-latest.jar spigot.jar
 }
@@ -43,7 +47,7 @@ function install_spigot_1_10_2() {
     mkdir "minecraft"
     cd minecraft/
     update
-    installDepend
+    installJava
     wget "https://cdn.getbukkit.org/spigot/spigot-1.10.2-R0.1-SNAPSHOT-latest.jar"
     mv spigot-1.10.2-R0.1-SNAPSHOT-latest.jar spigot.jar
 }
@@ -53,10 +57,6 @@ function install_spigot_1_10_2() {
 
 #function install_sponge() {
 #}
-
-function installJava() {
-  apt-get -y install oracle-java8-installer
-}
 
 function menu() {
   clear
