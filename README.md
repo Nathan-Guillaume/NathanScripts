@@ -19,7 +19,7 @@ CentOS            |   ✔
 
 **Contains**
 
-- Minecraft Server Installation
+- Minecraft Server Installation (BungeeCord / Spigot / Sponge / ...)
 
 ## Todo
 - discord_bot_install.sh

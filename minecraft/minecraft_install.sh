@@ -16,12 +16,18 @@
 #                         Language : French
 #                      Author : Nathan Guillame
 
-function update() {
-  apt-get update
+function verif() {
+  clear
+  echo "Vérification des dépendences ..."
+  sleep 3 ; update
+  clear ; echo "Vérifiaction terminé."
+  sleep 3 ; menuJAR
 }
 
-function installJava() {
-  apt-get -y install oracle-java8-installer wget
+function update {
+  echo ""
+  #apt-get update
+  #apt-get -y install oracle-java8-installer wget
 }
 
 function install_spigot_1_8_9() {
@@ -32,7 +38,8 @@ function install_spigot_1_8_9() {
     installJava
     wget "https://cdn.getbukkit.org/spigot/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar"
     mv spigot-1.8.8-R0.1-SNAPSHOT-latest.jar spigot.jar
-    # Add start.sh
+    wget "https://nathan-guillaume.be/scripts/spigot/1_8_9/start.sh"
+    sh start.sh
 }
 
 function install_spigot_1_9_2() {
@@ -43,7 +50,8 @@ function install_spigot_1_9_2() {
     installJava
     wget "https://cdn.getbukkit.org/spigot/spigot-1.9.2-R0.1-SNAPSHOT-latest.jar"
     mv spigot-1.9.2-R0.1-SNAPSHOT-latest.jar spigot.jar
-    # Add start.sh
+    wget "https://nathan-guillaume.be/scripts/spigot/1_9_2/start.sh"
+    sh start.sh
 }
 
 function install_spigot_1_10_2() {
@@ -54,7 +62,8 @@ function install_spigot_1_10_2() {
     installJava
     wget "https://cdn.getbukkit.org/spigot/spigot-1.10.2-R0.1-SNAPSHOT-latest.jar"
     mv spigot-1.10.2-R0.1-SNAPSHOT-latest.jar spigot.jar
-    # Add start.sh
+    wget "https://nathan-guillaume.be/scripts/spigot/1_10_2/start.sh"
+    sh start.sh
 }
 
 function install_bungee() {
@@ -64,8 +73,9 @@ function install_bungee() {
     update
     installJava
     wget "https://papermc.io/api/v2/projects/waterfall/versions/1.16/builds/408/downloads/waterfall-1.16-408.jar"
-    mv waterfall-1.16-408.jar bungeecord.
-    # Add start.sh
+    mv waterfall-1.16-408.jar bungeecord.jar
+    wget "https://nathan-guillaume.be/scripts/bungeecord/start.sh"
+    sh start.sh
 }
 
 #function install_sponge() {
@@ -75,8 +85,10 @@ function menu() {
   clear
   echo "Installation d'un serveur minecraft"
   echo ""
+  echo "/!\ Avant l'installation, vérifier les dépendences ! /!\ "
+  echo ""
   echo "   1) Installer un serveur minecraft"
-  echo "   2) Mettre à jour"
+  echo "   2) Vérifier dépendences"
   echo "   3) Quitter"
   until [[ "$MENU_OPTION" =~ ^[1-3]$ ]]; do
     read -rp "Sélectionner une option [1-3] : " MENU_OPTION
@@ -86,7 +98,7 @@ function menu() {
     menuJAR
     ;;
   2)
-    update
+    verif
     ;;
   3)
     exit 0
@@ -98,7 +110,7 @@ function menuJAR() {
   clear
   echo "Choix de la version de Minecraft"
   echo ""
-  echo "/!\ Avant l'installation, vérifier quand dans le dossier home, il n'y ai pas de fichier nommé minecraft ! /!\ "
+  echo "/!\ Avant l'installation, vérifier quand dans le dossier home, il n'y ai pas de fichier nommé minecraft & bungeecord ! /!\ "
   echo ""
   echo "   1) Spigot"
   echo "   2) BungeeCord"
