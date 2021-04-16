@@ -16,6 +16,31 @@
 #                         Language : French
 #                      Author : Nathan Guillame
 
-function update() {
-  apt-get update
+function menu() {
+  clear
+  echo "Installation de nginx"
+  echo ""
+  echo "/!\ Avant l'installation, vérifier les dépendences ! /!\ "
+  echo ""
+  echo "   1) Installer nginx"
+  echo "   2) Vérifier dépendences"
+  echo "   3) Quitter"
+  until [[ "$MENU_OPTION" =~ ^[1-3]$ ]]; do
+    read -rp "Sélectionner une option [1-3] : " MENU_OPTION
+  done
+  case $MENU_OPTION in
+  1)
+    echo "Pas encore disponible"
+    read -n1 -r -p "Appuyez sur n'importe quelle touche pour continuer..."
+    ;;
+  2)
+    echo "Pas encore disponible"
+    read -n1 -r -p "Appuyez sur n'importe quelle touche pour continuer..."
+    ;;
+  3)
+    exit 0
+    ;;
+  esac
 }
+
+menu
