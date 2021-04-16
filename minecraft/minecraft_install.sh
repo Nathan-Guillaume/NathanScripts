@@ -57,8 +57,16 @@ function install_spigot_1_10_2() {
     # Add start.sh
 }
 
-#function install_bungee() {
-#}
+function install_bungee() {
+    cd /home/
+    mkdir "minecraft"
+    cd minecraft/
+    update
+    installJava
+    wget "https://papermc.io/api/v2/projects/waterfall/versions/1.16/builds/408/downloads/waterfall-1.16-408.jar"
+    mv waterfall-1.16-408.jar bungeecord.
+    # Add start.sh
+}
 
 #function install_sponge() {
 #}
@@ -104,9 +112,7 @@ function menuJAR() {
     menuSpigotVersion
     ;;
   2)
-    #install_bungee
-    echo "Pas encore disponible"
-    read -n1 -r -p "Appuyez sur n'importe quelle touche pour continuer..."
+    install_bungee
     ;;
   3)
     #menuSpongeVersion
