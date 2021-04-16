@@ -25,9 +25,8 @@ function verif() {
 }
 
 function update {
-  echo ""
-  #apt-get update
-  #apt-get -y install oracle-java8-installer wget
+  apt-get update
+  apt-get -y install oracle-java8-installer wget
 }
 
 function install_spigot_1_8_9() {
