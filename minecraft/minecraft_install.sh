@@ -59,8 +59,8 @@ function install_spigot_1_10_2() {
 
 function install_bungee() {
     cd /home/
-    mkdir "minecraft"
-    cd minecraft/
+    mkdir "bungeecord"
+    cd bungeecord/
     update
     installJava
     wget "https://papermc.io/api/v2/projects/waterfall/versions/1.16/builds/408/downloads/waterfall-1.16-408.jar"
