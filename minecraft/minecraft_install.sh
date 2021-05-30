@@ -36,7 +36,7 @@ function install_spigot_1_8_9() {
     update
     wget "https://cdn.getbukkit.org/spigot/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar"
     mv spigot-1.8.8-R0.1-SNAPSHOT-latest.jar spigot.jar
-    wget "https://nathan-guillaume.be/scripts/spigot/1_8_9/start.sh"
+    wget "https://raw.githubusercontent.com/Nathan-Guillaume/NathanScripts/main/minecraft/launcher/1_8_9/start.sh"
     sh start.sh
 }
 
@@ -47,7 +47,7 @@ function install_spigot_1_9_2() {
     update
     wget "https://cdn.getbukkit.org/spigot/spigot-1.9.2-R0.1-SNAPSHOT-latest.jar"
     mv spigot-1.9.2-R0.1-SNAPSHOT-latest.jar spigot.jar
-    wget "https://nathan-guillaume.be/scripts/spigot/1_9_2/start.sh"
+    wget "https://raw.githubusercontent.com/Nathan-Guillaume/NathanScripts/main/minecraft/launcher/1_9_2/start.sh"
     sh start.sh
 }
 
@@ -58,7 +58,7 @@ function install_spigot_1_10_2() {
     update
     wget "https://cdn.getbukkit.org/spigot/spigot-1.10.2-R0.1-SNAPSHOT-latest.jar"
     mv spigot-1.10.2-R0.1-SNAPSHOT-latest.jar spigot.jar
-    wget "https://nathan-guillaume.be/scripts/spigot/1_10_2/start.sh"
+    wget "https://raw.githubusercontent.com/Nathan-Guillaume/NathanScripts/main/minecraft/launcher/1_10_2/start.sh"
     sh start.sh
 }
 
@@ -69,7 +69,7 @@ function install_bungee() {
     update
     wget "https://papermc.io/api/v2/projects/waterfall/versions/1.16/builds/408/downloads/waterfall-1.16-408.jar"
     mv waterfall-1.16-408.jar bungeecord.jar
-    wget "https://nathan-guillaume.be/scripts/bungeecord/start.sh"
+    wget "https://raw.githubusercontent.com/Nathan-Guillaume/NathanScripts/main/minecraft/launcher/bungeecord/start.sh"
     sh start.sh
 }
 
