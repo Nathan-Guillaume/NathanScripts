@@ -16,7 +16,7 @@
 #                         Language : French
 #                      Author : Nathan Guillame
 
-function verif() {
+function verif {
   clear
   echo "Vérification des dépendences ..."
   sleep 3 ; update
@@ -29,7 +29,7 @@ function update {
   apt-get -y install oracle-java8-installer wget screen
 }
 
-function install_spigot_1_8_9() {
+function install_spigot_1_8_9 {
     cd /home/
     mkdir "minecraft"
     cd minecraft/
@@ -40,7 +40,7 @@ function install_spigot_1_8_9() {
     sh start.sh
 }
 
-function install_spigot_1_9_2() {
+function install_spigot_1_9_2 {
     cd /home/
     mkdir "minecraft"
     cd minecraft/
@@ -51,7 +51,7 @@ function install_spigot_1_9_2() {
     sh start.sh
 }
 
-function install_spigot_1_10_2() {
+function install_spigot_1_10_2 {
     cd /home/
     mkdir "minecraft"
     cd minecraft/
@@ -62,7 +62,7 @@ function install_spigot_1_10_2() {
     sh start.sh
 }
 
-function install_bungee() {
+function install_bungee {
     cd /home/
     mkdir "bungeecord"
     cd bungeecord/
@@ -73,10 +73,7 @@ function install_bungee() {
     sh start.sh
 }
 
-#function install_sponge() {
-#}
-
-function menu() {
+function menu {
   clear
   echo "Installation d'un serveur minecraft"
   echo ""
@@ -101,7 +98,7 @@ function menu() {
   esac
 }
 
-function menuJAR() {
+function menuJAR {
   clear
   echo "Choix de la version de Minecraft"
   echo ""
@@ -132,7 +129,7 @@ function menuJAR() {
   esac
 }
 
-function menuSpigotVersion() {
+function menuSpigotVersion {
   clear
   echo "Choix de la version de Spigot"
   echo ""
@@ -161,7 +158,7 @@ function menuSpigotVersion() {
   esac
 }
 
-function menuSpongeVersion() {
+function menuSpongeVersion {
   clear
   echo "Choix de la version de Sponge"
   echo ""
