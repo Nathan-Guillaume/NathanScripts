@@ -16,6 +16,6 @@
 #                         Language : French
 #                      Author : Nathan Guillame
 
-function update() {
+function update {
   apt-get update
 }
