@@ -16,7 +16,7 @@
 #                         Language : French
 #                      Author : Nathan Guillame
 
-function menu() {
+function menu {
   clear
   echo "Installation de nginx"
   echo ""
