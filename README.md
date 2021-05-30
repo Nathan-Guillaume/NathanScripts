@@ -21,6 +21,12 @@ CentOS            |   ✔
 
 - Minecraft Server Installation (BungeeCord / Spigot / Sponge / ...)
 
+## Installation
+
+```
+git clone https://github.com/Nathan-Guillaume/NathanScripts
+```
+
 ## Todo
 - discord_bot_install.sh
 - nginx_install.sh
