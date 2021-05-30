@@ -37,6 +37,7 @@ function install_spigot_1_8_9 {
     wget "https://cdn.getbukkit.org/spigot/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar"
     mv spigot-1.8.8-R0.1-SNAPSHOT-latest.jar spigot.jar
     wget "https://raw.githubusercontent.com/Nathan-Guillaume/NathanScripts/main/minecraft/launcher/1_8_9/start.sh"
+    wget "https://raw.githubusercontent.com/Nathan-Guillaume/NathanScripts/main/minecraft/config/eula.txt"
     sh start.sh
 }
 
@@ -48,6 +49,7 @@ function install_spigot_1_9_2 {
     wget "https://cdn.getbukkit.org/spigot/spigot-1.9.2-R0.1-SNAPSHOT-latest.jar"
     mv spigot-1.9.2-R0.1-SNAPSHOT-latest.jar spigot.jar
     wget "https://raw.githubusercontent.com/Nathan-Guillaume/NathanScripts/main/minecraft/launcher/1_9_2/start.sh"
+        wget "https://raw.githubusercontent.com/Nathan-Guillaume/NathanScripts/main/minecraft/config/eula.txt"
     sh start.sh
 }
 
@@ -59,6 +61,7 @@ function install_spigot_1_10_2 {
     wget "https://cdn.getbukkit.org/spigot/spigot-1.10.2-R0.1-SNAPSHOT-latest.jar"
     mv spigot-1.10.2-R0.1-SNAPSHOT-latest.jar spigot.jar
     wget "https://raw.githubusercontent.com/Nathan-Guillaume/NathanScripts/main/minecraft/launcher/1_10_2/start.sh"
+    wget "https://raw.githubusercontent.com/Nathan-Guillaume/NathanScripts/main/minecraft/config/eula.txt"
     sh start.sh
 }
 
