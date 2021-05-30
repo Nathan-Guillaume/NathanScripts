@@ -21,12 +21,12 @@ function verif {
   echo "Vérification des dépendences ..."
   sleep 3 ; update
   clear ; echo "Vérifiaction terminé."
-  sleep 3 ; menuJAR
+  sleep 3 ; exit 0
 }
 
 function update {
   apt-get update && apt-get upgrade -y
-  apt-get -y install oracle-java8-installer wget screen
+  apt-get -y install default-jdk wget screen
 }
 
 function install_spigot_1_8_9 {
