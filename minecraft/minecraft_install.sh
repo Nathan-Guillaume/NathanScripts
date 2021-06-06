@@ -122,9 +122,7 @@ function menuJAR {
     install_bungee
     ;;
   3)
-    #menuSpongeVersion
-    echo "Pas encore disponible"
-    read -n1 -r -p "Appuyez sur n'importe quelle touche pour continuer..."
+    menuSpongeVersion
     ;;
   4)
     exit 0
