@@ -19,7 +19,7 @@ CentOS            |   ✔
 
 **Contains**
 
-- Minecraft Server Installation (BungeeCord / Spigot / Sponge / ...)
+- Minecraft Server Installation (BungeeCord / Spigot / Sponge / ...) ```bash minecraft_install.sh```
 
 ## Installation
 
